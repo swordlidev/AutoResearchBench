@@ -3,7 +3,7 @@
 Pure **Agentic Loop** architecture: automatically run baseline → LLM multi-turn tool-call iterative optimization → score-driven code updates.
 
 > [!TIP]
-> <font color="red">Feel free to share the algorithm you want to run, and I'll help you improve it using Autoresearch Agent</font>
+> ***Feel free to share the algorithm you want to run, and I'll help you improve it using Autoresearch Agent***
 
 ## Benchmark
 
