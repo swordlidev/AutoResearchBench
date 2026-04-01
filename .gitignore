@@ -1,0 +1,34 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# IDE / tool data
+.codebuddy/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Agent prompt files (generated per-session by launchers)
+CLAUDE.md
+AGENTS.md
+
+# Experiment run outputs (large, auto-generated)
+experiments/
+worktrees/
+results/
+queue/
+
+# Experimental code/artifacts
+dev/
+
+# Results file
+results.tsv
