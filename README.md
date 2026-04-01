@@ -1,7 +1,9 @@
 # Benchmarks for AI Autonomous Research Agent
 
 Pure **Agentic Loop** architecture: automatically run baseline → LLM multi-turn tool-call iterative optimization → score-driven code updates.
-<font color="red">Feel free to share the algorithm you want to run, and I'll help you improve it using Autoresearch Agent</font>
+
+> [!TIP]
+> <font color="red">Feel free to share the algorithm you want to run, and I'll help you improve it using Autoresearch Agent</font>
 
 ## Benchmark
 
