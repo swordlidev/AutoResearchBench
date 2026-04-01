@@ -1,4 +1,4 @@
-# AutoResearch — Universal AI Autonomous Research Agent
+# AutoResearchBench — Benchmarks for AI Autonomous Research Agent
 
 Pure **Agentic Loop** architecture: automatically run baseline → LLM multi-turn tool-call iterative optimization → score-driven code updates.
 
