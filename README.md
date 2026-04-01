@@ -2,6 +2,24 @@
 
 Pure **Agentic Loop** architecture: automatically run baseline → LLM multi-turn tool-call iterative optimization → score-driven code updates.
 
+
+## Benchmark
+
+We evaluated three frontier LLMs — **GPT-5.4**, **Claude-Opus-4-6**, and **Gemini-3-Pro-Preview** — on two algorithm optimization tasks: ViT image classification and nanochat language modeling. Each LLM was given up to 30 iterations to autonomously improve the baseline code through our Agentic Loop.
+
+### ViT (Image Classification, ↑ higher is better)
+
+Claude-Opus-4-6 achieved the best score of **0.6279**, followed by Gemini-3-Pro-Preview (**0.6007**) and GPT-5.4 (**0.5038**). All three LLMs significantly improved over the baseline (~0.40).
+
+![ViT Multi-LLM Comparison](visualizations/ViT_compare_llms.png)
+
+### nanochat (Language Modeling, ↓ lower is better)
+
+Gemini-3-Pro-Preview achieved the best (lowest) score of **1.0555**, closely followed by Claude-Opus-4-6 (**1.0505**). GPT-5.4 reached **1.1344**. All models improved from the baseline (~1.14).
+
+![nanochat Multi-LLM Comparison](visualizations/nanochat_compare_llms.png)
+
+
 ## Architecture
 
 ```
@@ -71,22 +89,6 @@ experiments/{algorithm}/{llm_name}/
 ├── experiment_002_xxx/         # 2nd optimization
 └── results.json                # All experiment results summary
 ```
-
-## Experiment Results
-
-We evaluated three frontier LLMs — **GPT-5.4**, **Claude-Opus-4-6**, and **Gemini-3-Pro-Preview** — on two algorithm optimization tasks: ViT image classification and nanochat language modeling. Each LLM was given up to 30 iterations to autonomously improve the baseline code through our Agentic Loop.
-
-### ViT (Image Classification, ↑ higher is better)
-
-Claude-Opus-4-6 achieved the best score of **0.6279**, followed by Gemini-3-Pro-Preview (**0.6007**) and GPT-5.4 (**0.5038**). All three LLMs significantly improved over the baseline (~0.40).
-
-![ViT Multi-LLM Comparison](visualizations/ViT_compare_llms.png)
-
-### nanochat (Language Modeling, ↓ lower is better)
-
-Gemini-3-Pro-Preview achieved the best (lowest) score of **1.0555**, closely followed by Claude-Opus-4-6 (**1.0505**). GPT-5.4 reached **1.1344**. All models improved from the baseline (~1.14).
-
-![nanochat Multi-LLM Comparison](visualizations/nanochat_compare_llms.png)
 
 ## Visualization
 
